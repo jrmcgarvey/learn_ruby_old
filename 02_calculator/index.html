@@ -111,23 +111,38 @@ end
 
 describe &quot;#multiply&quot; do
 
-  it &quot;multiplies two numbers&quot;
+  it &quot;multiplies two numbers&quot; do
+    expect(multiply([7,11]).to eq(77)
+  end
 
-  it &quot;multiplies several numbers&quot;
-
+  it &quot;multiplies several numbers&quot; do
+    expect(multiply([3,5,7,9]).to eq(945)
+  end
 end
 
 describe &quot;#power&quot; do
-  it &quot;raises one number to the power of another number&quot;
+  it &quot;raises one number to the power of another number&quot; do
+    expect(power(2,5)).to eq(32)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe &quot;#factorial&quot; do
-  it &quot;computes the factorial of 0&quot;
-  it &quot;computes the factorial of 1&quot;
-  it &quot;computes the factorial of 2&quot;
-  it &quot;computes the factorial of 5&quot;
-  it &quot;computes the factorial of 10&quot;
+  it &quot;computes the factorial of 0&quot; do
+    expect(factorial(0)).to eq(1)
+  end
+  it &quot;computes the factorial of 1&quot; do
+    expect(factorial(1)).to eq(1)
+  end
+  it &quot;computes the factorial of 2&quot; do
+    expect(factorial(2)).to eq(2)
+  end
+  it &quot;computes the factorial of 5&quot; do
+    expect(factorial(5)).to eq(300)
+  end
+  it &quot;computes the factorial of 10&quot; do
+    expect(factorial(10)).to eq(3628800)
+  end
 end</pre>
   </div>
 </div>
